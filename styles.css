@@ -2,6 +2,7 @@
 
 :root {
     --light-font-color: rgb(247, 242, 237);
+    --profile-color: rgb(139, 204, 242);
 }
 
 body {
@@ -19,6 +20,9 @@ header {
     background-color: var(--light-font-color);
     grid-column: 2;
     box-shadow: 0 4px 6px darkgrey;
+
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 ul {
@@ -26,6 +30,18 @@ ul {
     padding: 0;
 }
 
+header>div:first-child {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.profile-img {
+    width: 50px;
+    height: 50px;
+    background-color: var(--profile-color);
+    border-radius: 50%;
+    padding: 5px;
+}
 .sidebar {
     background-color: rgb(113, 44, 44);
     color: var(--light-font-color);
