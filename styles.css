@@ -17,7 +17,7 @@ body {
     line-height: 1.6;
 
     display: grid;
-    grid-template: 1fr 4fr / 1fr 4fr;
+    grid-template: 1fr 4fr / minmax(180px, 1fr) 4fr;
 }
 
 header {
@@ -50,6 +50,10 @@ h1, h2 {
 
 h3 {
     font-size: 1.1rem;
+}
+
+h4 {
+    font-size: .9rem;
 }
 
 h5 {
@@ -101,7 +105,7 @@ header>div:nth-child(2)>div:nth-child(2) {
 
 .intro {
     display: grid;
-    grid-template-columns: min-content 1fr;
+    grid-template-columns: min-content minmax(150px, 1fr);
     column-gap: 10px;
 
     align-items: center;
@@ -136,7 +140,7 @@ header>div:nth-child(2)>div:nth-child(2) {
 .sidebar {
     background-color: var(--dark-color);
     color: var(--light-font-color);
-    font-size: 1.25rem;
+    font-size: 1rem;
     padding: 15px 15px 0 15px; 
     grid-column: 1;
     grid-row: 1 / 3;
@@ -151,7 +155,7 @@ header>div:nth-child(2)>div:nth-child(2) {
     display: flex;
     gap: 5px;
     justify-content: start;
-    font-size: 1.75rem;
+    font-size: 1.25rem;
 }
 
 .sidebar>div:nth-child(2)>ul, .sidebar>div:last-child>ul {
@@ -200,6 +204,10 @@ main>h2:nth-child(5) {
     border-radius: 10px;
     box-shadow: 3px 3px 5px darkgrey;
     padding: 20px;
+}
+
+.announcement-container p {
+    font-size: .8rem;
 }
 
 .announcement-container>div {
