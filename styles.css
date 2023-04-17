@@ -48,6 +48,10 @@ h1, h2 {
     font-size: 1.25rem;
 }
 
+h3 {
+    font-size: 1.1rem;
+}
+
 h5 {
     font-size: .9rem;
 }
@@ -185,7 +189,7 @@ main>h2:nth-child(5) {
 }
 
 .card {
-    border-left: 5px solid var(--profile-color)
+    border-left: 10px solid var(--profile-color);
 }
 
 .announcement-container, .trending-container, .card {
