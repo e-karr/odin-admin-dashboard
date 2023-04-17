@@ -91,8 +91,16 @@ header>div:nth-child(2) {
     gap: 10px;
 }
 
+header>div:nth-child(2) {
+    display: grid;
+    grid-template-columns: max-content minmax(150px, 1fr) 1fr;
+    grid-template-rows: 90px;
+    justify-content: space-between;
+    gap: 10px;
+}
+
 header>div:first-child>div:nth-child(2), 
-header>div:nth-child(2)>div:nth-child(2) {
+header>div:nth-child(2)>div:nth-child(3) {
     display: flex;
     gap: 20px;
     align-items: center;
@@ -105,10 +113,12 @@ header>div:nth-child(2)>div:nth-child(2) {
 
 .intro {
     display: grid;
-    grid-template-columns: min-content minmax(150px, 1fr);
+    grid-template-columns: minmax(150px, 1fr);
     column-gap: 10px;
+}
 
-    align-items: center;
+.intro>p {
+    align-self: end;
 }
 
 .profile-img.medium {
