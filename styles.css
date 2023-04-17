@@ -12,6 +12,8 @@ body {
     background-color: bisque;
     font-family: 'Lato', sans-serif;
 
+    font-size: 1rem;
+
     display: grid;
     grid-template: 1fr 4fr / 1fr 4fr;
 }
@@ -20,6 +22,8 @@ header {
     background-color: var(--light-font-color);
     grid-column: 2;
     box-shadow: 0 4px 6px darkgrey;
+
+    padding: 15px 50px;
 
     display: grid;
     grid-template-columns: 1fr;
@@ -30,9 +34,38 @@ ul {
     padding: 0;
 }
 
+h5 {
+    font-size: .9rem;
+}
+
 header>div:first-child {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+}
+
+header>div:first-child>div:nth-child(2) {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: end;
+} 
+
+.fa-bell {
+    font-size: 1.25rem;
+}
+
+.search {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.searchbar {
+    background-color: lightgrey;
+    flex: 1;
+    border-radius: 25px;
+    height: 1.5rem;
 }
 
 .profile-img {
