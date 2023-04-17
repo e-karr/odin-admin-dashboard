@@ -3,4 +3,19 @@ body {
     padding: 0;
     height: 100vh;
     background-color: bisque;
+
+    display: grid;
+    grid-template: 1fr 4fr / 1fr 4fr;
+}
+
+header {
+    background-color: rgb(247, 242, 237);
+    grid-column: 2;
+    box-shadow: 0 4px 6px darkgrey;
+}
+
+.sidebar {
+    background-color: rgb(113, 44, 44);
+    grid-column: 1;
+    grid-row: 1 / 3;
 }
