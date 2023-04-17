@@ -35,13 +35,14 @@ ul {
     padding: 0;
 }
 
-p {
+p, 
+h1, 
+h2 {
     margin: 0;
 }
 
 h1 {
     font-size: 1.25rem;
-    margin: 0;
 }
 
 h5 {
@@ -55,6 +56,14 @@ button {
     border-radius: 25px;
     padding: 10px 25px;
     font-weight: 700;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: max-content 2fr max-content 2fr;
+
+    padding: 20px;
 }
 
 header>div:first-child, 
@@ -146,4 +155,14 @@ header>div:nth-child(2)>div:nth-child(2) {
 .fa-cube {
     align-self: center;
     margin-right: 10px;
+}
+
+main>h2:nth-child(3){
+    grid-column: 2;
+    grid-row: 1;
+}
+
+main>h2:nth-child(5) {
+    grid-column: 2;
+    grid-row: 3;
 }
