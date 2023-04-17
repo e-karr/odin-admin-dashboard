@@ -3,6 +3,7 @@
 :root {
     --light-font-color: rgb(247, 242, 237);
     --profile-color: rgb(139, 204, 242);
+    --dark-color: rgb(113, 44, 44);
 }
 
 body {
@@ -34,17 +35,38 @@ ul {
     padding: 0;
 }
 
+p {
+    margin: 0;
+}
+
+h1 {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
 h5 {
     font-size: .9rem;
 }
 
-header>div:first-child {
+button {
+    background-color: var(--dark-color);
+    color: var(--light-font-color);
+    border: none;
+    border-radius: 25px;
+    padding: 10px 25px;
+    font-weight: 700;
+}
+
+header>div:first-child, 
+header>div:nth-child(2) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
+    gap: 10px;
 }
 
-header>div:first-child>div:nth-child(2) {
+header>div:first-child>div:nth-child(2), 
+header>div:nth-child(2)>div:nth-child(2) {
     display: flex;
     gap: 20px;
     align-items: center;
@@ -53,6 +75,20 @@ header>div:first-child>div:nth-child(2) {
 
 .fa-bell {
     font-size: 1.25rem;
+}
+
+.intro {
+    display: grid;
+    grid-template-columns: min-content max-content;
+    column-gap: 10px;
+
+    align-items: center;
+}
+
+.profile-img.medium {
+    place-self: center;
+    width: 80px;
+    height: 80px;
 }
 
 .search {
@@ -76,7 +112,7 @@ header>div:first-child>div:nth-child(2) {
     padding: 5px;
 }
 .sidebar {
-    background-color: rgb(113, 44, 44);
+    background-color: var(--dark-color);
     color: var(--light-font-color);
     font-size: 1.25rem;
     padding: 15px 15px 0 15px; 
