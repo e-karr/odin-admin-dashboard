@@ -190,6 +190,9 @@ main>h2:nth-child(5) {
 
 .card {
     border-left: 10px solid var(--profile-color);
+
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
 .announcement-container, .trending-container, .card {
@@ -203,6 +206,11 @@ main>h2:nth-child(5) {
     padding: 10px 0;
 }
 
+.card-icons {
+    place-self: end;
+}
+
 .card-icons>i {
     margin: 10px;
+    font-size: 1.25rem;
 }
