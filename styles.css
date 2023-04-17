@@ -40,7 +40,8 @@ p,
 h1, 
 h2,
 h3,
-h4 {
+h4,
+h6 {
     margin: 0;
 }
 
@@ -143,7 +144,6 @@ header>div:nth-child(2)>div:nth-child(3) {
 .profile-img {
     width: 30px;
     height: 30px;
-    background-color: var(--profile-color);
     border-radius: 50%;
     padding: 5px;
 }
@@ -209,7 +209,9 @@ main>h2:nth-child(5) {
     grid-template-columns: 1fr;
 }
 
-.announcement-container, .trending-container, .card {
+.announcement-container, 
+.trending-container, 
+.card {
     background-color: var(--light-font-color);
     border-radius: 10px;
     box-shadow: 3px 3px 5px darkgrey;
@@ -222,6 +224,40 @@ main>h2:nth-child(5) {
 
 .announcement-container>div {
     padding: 10px 0;
+}
+
+.trending-container {
+    display: grid;
+    grid-template-columns: max-content 2fr;
+    grid-auto-rows: max-content;
+    row-gap: 20px;
+    column-gap: 10px;
+
+    align-self: start;
+}
+
+.trending-container img {
+    justify-self: start;
+}
+
+.trending-container p {
+    font-size: .8rem;
+}
+
+.dog {
+    background-color: var(--profile-color);
+}
+
+.cat {
+    background-color: rgba(165, 84, 241, 0.773);
+}
+
+.bird {
+    background-color: lightgreen;
+}
+
+.face {
+    background-color: rgb(223, 223, 123);
 }
 
 .card-icons {
