@@ -21,10 +21,15 @@ header {
     box-shadow: 0 4px 6px darkgrey;
 }
 
+ul {
+    margin-left: 15px;
+    padding: 0;
+}
+
 .sidebar {
     background-color: rgb(113, 44, 44);
     color: var(--light-font-color);
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     padding: 15px 15px 0 15px; 
     grid-column: 1;
     grid-row: 1 / 3;
@@ -49,7 +54,11 @@ header {
     gap: 10px;
 }
 
+.sidebar>div:nth-child(2)>ul>li>i, .sidebar>div:last-child>ul>li>i {
+    margin-right: 10px;
+}
+
 .fa-cube {
     align-self: center;
-    margin-right: 7px;
+    margin-right: 10px;
 }
