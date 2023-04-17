@@ -202,3 +202,7 @@ main>h2:nth-child(5) {
 .announcement-container>div {
     padding: 10px 0;
 }
+
+.card-icons>i {
+    margin: 10px;
+}
