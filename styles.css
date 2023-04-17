@@ -90,7 +90,7 @@ header>div:nth-child(2)>div:nth-child(2) {
 
 .intro {
     display: grid;
-    grid-template-columns: min-content max-content;
+    grid-template-columns: min-content 1fr;
     column-gap: 10px;
 
     align-items: center;
@@ -98,8 +98,8 @@ header>div:nth-child(2)>div:nth-child(2) {
 
 .profile-img.medium {
     place-self: center;
-    width: 80px;
-    height: 80px;
+    width: 50px;
+    height: 50px;
 }
 
 .search {
@@ -116,8 +116,8 @@ header>div:nth-child(2)>div:nth-child(2) {
 }
 
 .profile-img {
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     background-color: var(--profile-color);
     border-radius: 50%;
     padding: 5px;
